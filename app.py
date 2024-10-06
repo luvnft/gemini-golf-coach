@@ -54,9 +54,11 @@ def get_insights(video_path):
     st.write(response.text)
     genai.delete_file(video_file.name)
 
-
 def app():
-    st.title("Gemini Can Golf Coach")
+    st.title("Hahz BGolf Coach")
+    
+    # Adding the TikTok follow link
+    st.markdown("Follow BGolf Club on [TikTok](https://tiktok.com/@bgolfclub)")
 
     uploaded_file = st.file_uploader("Upload a video file", type=["mp4", "avi", "mov", "mkv"])
 
